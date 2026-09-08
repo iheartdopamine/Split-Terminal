@@ -1,0 +1,8 @@
+# Binarios y carpetas de compilación
+build/
+bin/
+.vscode/
+.idea/
+*.o
+*.a
+*.out
