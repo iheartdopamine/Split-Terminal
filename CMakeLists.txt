@@ -10,7 +10,6 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# Descarga automática de FTXUI
 include(FetchContent)
 FetchContent_Declare(
   ftxui
@@ -24,9 +23,9 @@ include_directories(include)
 add_executable(split_terminal
     src/main.cpp
     src/core/System.cpp
+    src/core/BufferManager.cpp
 )
 
-# Vincular FTXUI a nuestro binario
 target_link_libraries(split_terminal PRIVATE
     ftxui::screen
     ftxui::dom
