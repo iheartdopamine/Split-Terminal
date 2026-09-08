@@ -16,7 +16,7 @@ An interactive, low-level binary data processing terminal simulation written in 
 - **Event-Driven Terminal Loop:** Key navigation (`UP`/`DOWN` arrows, `ENTER`) handling dynamic system states.
 
 ## Architecture
-
+```text
 split-terminal/
 ├── include/
 │   └── core/
@@ -28,6 +28,7 @@ split-terminal/
 │       ├── BufferManager.cpp
 │       └── System.cpp
 └── CMakeLists.txt             # C++20 CMake build definition
+```
 
 ## Build & Run
 
